@@ -1,0 +1,533 @@
+body{
+	padding-bottom: 300px;
+	overflow-x: hidden;
+}
+header{
+	position: fixed;
+	width: 100%;
+	background-color: #fff;
+	height: 130px;
+	z-index:1000;
+	padding: 0.5em 0;
+
+}
+.title{
+	text-align: center;
+	font-family:'Lato';
+	font-size: 2.5rem;
+	color: $black;
+	margin: 0 auto;
+}
+.sub-title{
+	font-family:'Lato';
+	font-weight: 300;
+	font-size: 1.1rem;
+	text-align: center;
+	margin: 0 auto;
+	color: $grey;
+	span{
+		color: $black;
+		font-weight: 500;
+		transition: color 0.3s ease;
+	}
+
+}
+.links{
+	font-family: 'Lato';
+	font-weight: 300;
+	text-align: center;
+	margin: 0;
+	font-size: 0.8rem;
+	margin-top: 0.4em;
+	a{
+		font-weight: 500;
+		transition: color 0.3s ease;
+		text-decoration: none;
+		color: #222;
+		&:hover{
+			text-decoration: underline;
+		}
+	}
+
+}
+.title-container{
+	padding-top: 2em;
+}
+.title-container:nth-of-type(1){
+	padding-top: 130px;
+}
+.color-palette{
+	font-family: 'Lato';
+	font-size: 1.5rem;
+	color:$black;
+}
+.color-container{
+	padding-top: 2em;
+}
+
+
+.col-color{
+	margin-bottom: 3em;
+	position: relative;
+	padding: 0;
+
+}
+.blast{
+	display: block;
+	position: absolute;
+	margin-left: 50%;
+	margin-top : -50%;
+	transform: translate(-50%,-50%);
+	border-radius:50%;
+	animation-name: blast;
+    animation-duration: 1s;
+    pointer-events: none;
+    z-index:1001;
+}
+.choose-border{
+	display: block;
+	position: fixed;
+	top:30px;
+	left:30px;
+	width: 130px;
+	height: 50px;
+	border:1px solid lighten(#26292c, 65%);
+	border-radius:25px;
+	
+	&:before{
+		content: attr(data-content) "";
+		width: 47%;
+		height: 40px;
+		border-radius:25px;
+		position: absolute;
+		top:4px; left:2%;
+		-webkit-box-shadow: 0px 0px 20px 3px rgba(0,0,0,0.19);
+		-moz-box-shadow: 0px 0px 25px 3px rgba(0,0,0,0.19);
+		box-shadow: 0px 0px 25px 3px rgba(0,0,0,0.19);
+		transition: left 0.3s ease;
+		pointer-events:none;
+		@media screen and (max-width: 530px){
+			height: 28px;
+			top:0px;
+		}
+	}
+	&.changed:before{
+		left:50%;
+	}
+	.choose-option{
+		width: 48%;
+		font-family: 'Lato';
+		font-size: 0.8rem;
+		color: #555;
+		display: inline-block;
+		text-decoration: none;
+		text-align: center;
+		line-height: 48px;
+
+
+		&.active{
+			color: $ming;
+		}
+		@media screen and (max-width: 530px){
+			font-size: 0.6rem;
+			line-height: 28px;
+			width: 46%;
+		}
+	}
+	@media screen and (max-width: 530px){
+		left:50%;
+		transform: translateX(-50%);
+		top:132px;
+		width: 80px;
+		height: 30px;
+		background-color: #fff;
+	}
+}
+.color{
+	display: block;
+	margin: 0 auto;
+	width: 80px;
+	height: 80px;
+	border-radius:50%;
+	-webkit-box-shadow: 10px 13px 24px -5px rgba(0,0,0,0.2);
+	-moz-box-shadow: 10px 13px 24px -5px rgba(0,0,0,0.2);
+	box-shadow: 10px 13px 24px -5px rgba(0,0,0,0.2);
+	cursor: pointer;
+
+	// Base
+
+	&.c-amethyst{
+		background-color: $amethyst;
+	}
+	&.c-asbestos{
+		background-color: $asbestos;
+	}
+	&.c-belize-hole{
+		background-color: $belize-hole;
+	}
+	&.c-carrot{
+		background-color: $carrot;
+	}
+	&.c-clouds{
+		background-color: $clouds;
+	}
+	&.c-concrete{
+		background-color: $concrete;
+	}
+	&.c-emerald{
+		background-color: $emerald;
+	}
+	&.c-green-sea{
+		background-color: $green-sea;
+	}
+	&.c-midnight-blue{
+		background-color: $midnight-blue;
+	}
+	&.c-nephritis{
+		background-color: $nephritis;
+	}
+	&.c-orange{
+		background-color: $orange;
+	}
+	&.c-peter-river{
+		background-color: $peter-river;
+	}
+	&.c-pomegranate{
+		background-color: $pomegranate;
+	}
+	&.c-pumpkin{
+		background-color: $pumpkin;
+	}
+	&.c-silver{
+		background-color: $silver;
+	}
+	&.c-sunflower{
+		background-color: $sunflower;
+	}
+	&.c-turquise{
+		background-color: $turquoise;
+	}
+	&.c-wet-asphalt{
+		background-color: $wet-asphalt;
+	}
+	&.c-wisteria{
+		background-color: $wisteria;
+	}
+
+
+	// Palettes
+	&.c-plum{
+		background-color: $plum;
+	}
+	&.c-seance{
+		background-color: $seance;
+	}
+	&.c-medium-purple{
+		background-color: $medium-purple;
+	}
+	&.c-light-wisteria{
+		background-color: $light-wisteria;
+	}
+	&.c-new-york-pink{
+		background-color: $new-york-pink;
+	}
+	&.c-red{
+		background-color: $red;
+	}
+	&.c-sunglo{
+		background-color: $sunglo;
+	}
+	&.c-thunderbird{
+		background-color: $thunderbird;
+	}
+	&.c-old-brick{
+		background-color: $old-brick;
+	}
+	&.c-flamingo{
+		background-color: $flamingo;
+	}
+	&.c-valencia{
+		background-color: $valencia;
+	}
+	&.c-monza{
+		background-color: $monza;
+	}
+	&.c-cinnabar{
+		background-color: $cinnabar;
+	}
+	&.c-tahiti-gold{
+		background-color: $tahiti-gold;
+	}
+	&.c-casablanca{
+		background-color: $casablanca;
+	}
+	&.c-crusta{
+		background-color: $crusta;
+	}
+	&.c-jaffa{
+		background-color: $jaffa;
+	}
+	&.c-lightning-yellow{
+		background-color: $lightning-yellow;
+	}
+	&.c-saffron-light{
+		background-color: $saffron-light;
+	}
+	&.c-ecstasy{
+		background-color: $ecstasy;
+	}
+	&.c-ripe-lemon{
+		background-color: $ripe-lemon;
+	}
+	&.c-saffron{
+		background-color: $saffron;
+	}
+	&.c-fire-bush{
+		background-color: $fire-bush;
+	}
+	&.c-downy{
+		background-color: $downy;
+	}
+	&.c-fire-bush{
+		background-color: $fire-bush;
+	}
+	&.c-light-sea{
+		background-color: $light-sea;
+	}
+	&.c-medium-aquamarine{
+		background-color: $medium-aquamarine;
+	}
+	&.c-observatory{
+		background-color: $observatory;
+	}
+	&.c-madang{
+		background-color: $madang;
+	}
+	&.c-riptide{
+		background-color: $riptide;
+	}
+	&.c-jungle-green{
+		background-color: $jungle-green;
+	}
+	&.c-aquamarine{
+		background-color: $aquamarine;
+	}
+	&.c-ocean-green{
+		background-color: $ocean-green;
+	}
+	&.c-salem{
+		background-color: $salem;
+	}
+	&.c-eucalyptus{
+		background-color: $eucalyptus;
+	}
+	&.c-shakespeare{
+		background-color: $shakespeare;
+	}
+	&.c-curious-blue{
+		background-color: $curious-blue;
+	}
+	&.c-madison{
+		background-color: $madison;
+	}
+	&.c-jordy-blue{
+		background-color: $jordy-blue;
+	}
+	&.c-dodger-blue{
+		background-color: $dodger-blue;
+	}
+	&.c-ming{
+		background-color: $ming;
+	}
+	&.c-ebony-clay{
+		background-color: $ebony-clay;
+	}
+	&.c-malibu{
+		background-color: $malibu;
+	}
+	&.c-poseidon{
+		background-color: $poseidon;
+	}
+	&.c-chambry{
+		background-color: $chambry;
+	}
+	&.c-pickled-bluewood{
+		background-color: $pickled-bluewood;
+	}
+	&.c-hoki{
+		background-color: $hoki;
+	}
+	&.c-jelly-bean{
+		background-color: $jelly-bean;
+	}
+	&.c-jackson-purple{
+		background-color: $jackson-purple;
+	}
+	&.c-steel-blue{
+		background-color: $steel-blue;
+	}
+	&.c-fountain-blue{
+		background-color: $fountain-blue;
+	}
+	&.c-porcelain{
+		background-color: $porcelain;
+	}
+	&.c-gallery{
+		background-color: $gallery;
+	}
+	&.c-iron{
+		background-color: $iron;
+	}
+	&.c-pumice{
+		background-color: $pumice;
+	}
+	&.c-silver-sand{
+		background-color: $silver-sand;
+	}
+	&.c-edward{
+		background-color: $edward;
+	}
+	&.c-cascade{
+		background-color: $cascade;
+	}
+	
+	// Social media
+	&.c-twitter{
+		background-color: $twitter;
+	}
+	&.c-facebook{
+		background-color: $facebook;
+	}
+	&.c-googleplus{
+		background-color: $googleplus;
+	}
+	&.c-pinterest{
+		background-color: $pinterest;
+	}
+	&.c-linkedin{
+		background-color: $linkedin;
+	}
+	&.c-youtube{
+		background-color: $youtube;
+	}
+	&.c-vimeo{
+		background-color: $vimeo;
+	}
+	&.c-tumblr{
+		background-color: $tumblr;
+	}
+	&.c-instagram{
+		background-color: $instagram;
+	}
+	&.c-flickr{
+		background-color: $flickr;
+	}
+	&.c-dribbble{
+		background-color: $dribbble;
+	}
+	&.c-quora{
+		background-color: $quora;
+	}
+	&.c-foursquare{
+		background-color: $foursquare;
+	}
+	&.c-forrst{
+		background-color: $forrst;
+	}
+	&.c-vk{
+		background-color: $vk;
+	}
+	&.c-wordpress{
+		background-color: $wordpress;
+	}
+	&.c-stumbleupon{
+		background-color: $stumbleupon;
+	}
+	&.c-yahoo{
+		background-color: $yahoo;
+	}
+	&.c-blogger{
+		background-color: $blogger;
+	}
+	&.c-soundcloud{
+		background-color: $soundcloud;
+	}
+}
+.color-title, .color-hex, .color-rgb{
+	font-family: 'Lato';
+	text-align: center;
+}
+.color-title{
+	font-size: 1.2rem;
+	font-weight: 700;
+	margin: 1em auto 0;
+	color: $black;
+}
+.color-hex, .color-rgb{
+	font-size: 1rem;
+	font-weight: 300;
+	margin: 0;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%)
+}
+
+.color-text{
+	opacity: 0;
+	&.active{
+		opacity: 1;
+	}
+}
+
+@-webkit-keyframes blast {
+	0%{ 
+		opacity:0.9;
+		width:50px;
+		height: 50px;
+
+	}
+	100%{ 
+		opacity:0;
+		width: 1000px;
+		height: 1000px;
+	}
+}
+@-o-keyframes blast {
+	0%{ 
+		opacity:0.9;
+		width:50px;
+		height: 50px;
+
+	}
+	100%{ 
+		opacity:0;
+		width: 1000px;
+		height: 1000px;
+	}
+}
+@-moz-keyframes blast {
+	0%{ 
+		opacity:0.9;
+		width:50px;
+		height: 50px;
+
+	}
+	100%{ 
+		opacity:0;
+		width: 1000px;
+		height: 1000px;
+	}
+}
+@keyframes blast {
+	0%{ 
+		opacity:0.9;
+		width:50px;
+		height: 50px;
+
+	}
+	100%{ 
+		opacity:0;
+		width: 1000px;
+		height: 1000px;
+	}
+}

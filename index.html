@@ -1,0 +1,670 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Color Blast </title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+         <meta property="og:type"               content="page" />
+        <meta property="og:description"        content="Pick Color, blast it and copy to your clipboard." />
+        <meta property="og:description"        content="Choose color to blast it and copy to your clipboard" />
+         <meta property="og:title"              content="Color Blast" />
+        <meta property="og:description"        content="Pick Color, blast it and copy to your clipboard." />
+        <meta property="og:description"        content="Choose color to blast it and copy to your clipboard" />
+         <link rel="stylesheet" href="assets/css/bootstrap.css">
+        <link href='https://fonts.googleapis.com/css?family=Lato:400,300,700,900&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+        <!--  MAIN STYLES -->
+        <link rel="stylesheet" href="styles/main.css">
+
+        <script src="assets/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+    <header class="header">
+        <h1 class="title">Color Blast</h1>
+        <p class="sub-title">click on <span class="color-word">color</span> to blast it </br> and copy to your clipboard!</p>
+         <div class="choose-border">
+            <a href="#" class="choose-option choose-option-1">HEX</a>
+            <a href="#" class="choose-option choose-option-2">RGB</a>
+        </div>
+    </header>
+    
+    <!-- BASE -->
+    <div class="container title-container">
+        <h2 class="color-palette">Base</h2>
+    </div>
+    <div class="container color-container">
+        <div class="col-md-2 col-sm-3 col-xs-6 col-color">
+            <div class="color c-pomegranate" data-clipboard-text="#C0392B" data-rgb="rgb(192,57,43)" data-hex="#C0392B"></div>
+            <p class="color-title">Pomegranate</p>
+            <p class="color-text color-hex">#C0392B</p>
+            <p class="color-text color-rgb">rgb(192,57,43)</p>
+        </div>
+        <div class="col-md-2 col-sm-3 col-xs-6 col-color">
+            <div class="color c-cinnabar" data-clipboard-text="#E74C3C" data-rgb="rgb(231,76,60)" data-hex="#E74C3C"></div>
+            <p class="color-title">Cinnabar</p>
+            <p class="color-text color-hex">#E74C3C</p>
+            <p class="color-text color-rgb">rgb(231,76,60)</p>
+        </div>
+        <div class="col-md-2 col-sm-3 col-xs-6 col-color">
+            <div class="color c-pumpkin" data-clipboard-text="#D35400" data-rgb="rgb(211,84,0)" data-hex="#D35400"></div>
+            <p class="color-title">Pumpkin</p>
+            <p class="color-text color-hex">#D35400</p>
+            <p class="color-text color-rgb">rgb(211,84,0)</p>
+        </div>
+        <div class="col-md-2 col-sm-3 col-xs-6 col-color">
+            <div class="color c-carrot" data-clipboard-text="#E67E22" data-rgb="rgb(230,126,34)" data-hex="#E67E22"></div>
+            <p class="color-title">Carrot</p>
+            <p class="color-text color-hex">#E67E22</p>
+            <p class="color-text color-rgb">rgb(230,126,34)</p>
+        </div>
+        <div class="col-md-2 col-sm-3 col-xs-6 col-color">
+            <div class="color c-orange" data-clipboard-text="#F39C12" data-rgb="rgb(243,156,18)" data-hex="#F39C12"></div>
+            <p class="color-title">Orange</p>
+            <p class="color-text color-hex">#F39C12</p>
+            <p class="color-text color-rgb">rgb(243,156,18)</p>
+        </div>
+        <div class="col-md-2 col-sm-3 col-xs-6 col-color">
+            <div class="color c-sunflower" data-clipboard-text="#F1C40F" data-rgb="rgb(241,196,15)" data-hex="#F1C40F"></div>
+            <p class="color-title">Sun Flower</p>
+            <p class="color-text color-hex">#F1C40F</p>
+            <p class="color-text color-rgb">rgb(241,196,15)</p>
+        </div>
+        <div class="col-md-2 col-sm-3 col-xs-6 col-color">
+            <div class="color c-nephritis" data-clipboard-text="#27AE60" data-rgb="rgb(39,174,96)" data-hex="#27AE60"></div>
+            <p class="color-title">Nephritis</p>
+            <p class="color-text color-hex">#27AE60</p>
+            <p class="color-text color-rgb">rgb(39,174,96)</p>
+        </div>
+        <div class="col-md-2 col-sm-3 col-xs-6 col-color">
+            <div class="color c-emerald" data-clipboard-text="#2ECC71" data-rgb="rgb(46,204,113)" data-hex="#2ECC71"></div>
+            <p class="color-title">Emerald</p>
+            <p class="color-text color-hex">#2ECC71</p>
+            <p class="color-text color-rgb">rgb(46,204,113)</p>
+        </div>
+        <div class="col-md-2 col-sm-3 col-xs-6 col-color">
+            <div class="color c-green-sea" data-clipboard-text="#16A085" data-rgb="rgb(22,160,133)" data-hex="#16A085"></div>
+            <p class="color-title">Green Sea</p>
+            <p class="color-text color-hex">#16A085</p>
+            <p class="color-text color-rgb">rgb(22,160,133)</p>
+        </div>
+        <div class="col-md-2 col-sm-3 col-xs-6 col-color">
+            <div class="color c-turquise" data-clipboard-text="#1ABC9C" data-rgb="rgb(26,188,156)" data-hex="#1ABC9C"></div>
+            <p class="color-title">Turquise</p>
+            <p class="color-text color-hex">#1ABC9C</p>
+            <p class="color-text color-rgb">rgb(26,188,156)</p>
+        </div>
+        <div class="col-md-2 col-sm-3 col-xs-6 col-color">
+            <div class="color c-peter-river" data-clipboard-text="#3498DB" data-rgb="rgb(52,152,219)" data-hex="#3498DB"></div>
+            <p class="color-title">Peter River</p>
+            <p class="color-text color-hex">#3498DB</p>
+            <p class="color-text color-rgb">rgb(52,152,219)</p>
+        </div>
+        <div class="col-md-2 col-sm-3 col-xs-6 col-color">
+            <div class="color c-belize-hole" data-clipboard-text="#2980B9" data-rgb="rgb(41,128,185)" data-hex="#2980B9"></div>
+            <p class="color-title">Belize Hole</p>
+            <p class="color-text color-hex">#2980B9</p>
+            <p class="color-text color-rgb">rgb(41,128,185)</p>
+        </div>
+        <div class="col-md-2 col-sm-3 col-xs-6 col-color">
+            <div class="color c-amethyst" data-clipboard-text="#9B59B6" data-rgb="rgb(155,89,182)" data-hex="#9B59B6"></div>
+            <p class="color-title">Amethyst</p>
+            <p class="color-text color-hex">#9B59B6</p>
+            <p class="color-text color-rgb">rgb(155,89,182)</p>
+        </div>
+        <div class="col-md-2 col-sm-3 col-xs-6 col-color">
+            <div class="color c-wisteria" data-clipboard-text="#8E44AD" data-rgb="rgb(142,68,173)" data-hex="#8E44AD"></div>
+            <p class="color-title">Wisteria</p>
+            <p class="color-text color-hex">#8E44AD</p>
+            <p class="color-text color-rgb">rgb(142,68,173)</p>
+        </div>
+        <div class="col-md-2 col-sm-3 col-xs-6 col-color">
+            <div class="color c-wet-asphalt" data-clipboard-text="#34495E" data-rgb="rgb(52,73,94)" data-hex="#34495E"></div>
+            <p class="color-title">Wet Asphalt</p>
+            <p class="color-text color-hex">#34495E</p>
+            <p class="color-text color-rgb">rgb(52,73,94)</p>
+        </div>
+        <div class="col-md-2 col-sm-3 col-xs-6 col-color">
+            <div class="color c-midnight-blue" data-clipboard-text="#2C3E50" data-rgb="rgb(44,62,80)" data-hex="#2C3E50"></div>
+            <p class="color-title">Midnight Blue</p>
+            <p class="color-text color-hex">#2C3E50</p>
+            <p class="color-text color-rgb">rgb(44,62,80)</p>
+        </div>
+        <div class="col-md-2 col-sm-3 col-xs-6 col-color">
+            <div class="color c-asbestos" data-clipboard-text="#7F8C8D" data-rgb="rgb(127,140,141)" data-hex="#7F8C8D"></div>
+            <p class="color-title">Asbestos</p>
+            <p class="color-text color-hex">#7F8C8D</p>
+            <p class="color-text color-rgb">rgb(127,140,141)</p>
+        </div>
+        <div class="col-md-2 col-sm-3 col-xs-6 col-color">
+            <div class="color c-concrete" data-clipboard-text="#95A5A6" data-rgb="rgb(149,165,166)" data-hex="#95A5A6"></div>
+            <p class="color-title">Concrete</p>
+            <p class="color-text color-hex">#95A5A6</p>
+            <p class="color-text color-rgb">rgb(149,165,166)</p>
+        </div>
+
+        <div class="col-md-2 col-sm-3 col-xs-6 col-color">
+            <div class="color c-silver" data-clipboard-text="#BDC3C7" data-rgb="rgb(189,195,199)" data-hex="#BDC3C7"></div>
+            <p class="color-title">Silver</p>
+            <p class="color-text color-hex">#BDC3C7</p>
+            <p class="color-text color-rgb">rgb(189,195,199)</p>
+        </div>
+        <div class="col-md-2 col-sm-3 col-xs-6 col-color">
+            <div class="color c-clouds" data-clipboard-text="#ECF0F1" data-rgb="rgb(236,240,241)" data-hex="#ECF0F1"></div>
+            <p class="color-title">Clouds</p>
+            <p class="color-text color-hex">#ECF0F1</p>
+            <p class="color-text color-rgb">rgb(236,240,241)</p>
+        </div>
+
+    </div>
+
+    <!-- PALETTES -->
+    <div class="container title-container">
+        <h2 class="color-palette">Palettes</h2>
+    </div>
+    <div class="container color-container">
+        <!-- Red  -->
+        <div class="col-md-2 col-sm-3 col-xs-6 col-color">
+            <div class="color c-old-brick" data-clipboard-text="#96281B" data-rgb="rgb(150,40,27)" data-hex="#96281B"></div>
+            <p class="color-title">Old Brick</p>
+            <p class="color-text color-hex">#96281B</p>
+            <p class="color-text color-rgb">rgb(150,40,27)</p>
+        </div>
+        
+        <div class="col-md-2 col-sm-3 col-xs-6 col-color">
+            <div class="color c-monza" data-clipboard-text="#CF000F" data-rgb="rgb(207,0,15)" data-hex="#CF000F"></div>
+            <p class="color-title">Monza</p>
+            <p class="color-text color-hex">#CF000F</p>
+            <p class="color-text color-rgb">rgb(207,0,15)</p>
+        </div>
+
+        <div class="col-md-2 col-sm-3 col-xs-6 col-color">
+            <div class="color c-red" data-clipboard-text="#FF0000" data-rgb="rgb(255,0,0)" data-hex="#FF0000"></div>
+            <p class="color-title">Red</p>
+            <p class="color-text color-hex">#FF0000</p>
+            <p class="color-text color-rgb">rgb(255,0,0)</p>
+        </div>
+
+        <div class="col-md-2 col-sm-3 col-xs-6 col-color">
+            <div class="color c-thunderbird" data-clipboard-text="#D91E18" data-rgb="rgb(217,30,24)" data-hex="#D91E18"></div>
+            <p class="color-title">Thunderbird</p>
+            <p class="color-text color-hex">#D91E18</p>
+            <p class="color-text color-rgb">rgb(217,30,24)</p>
+        </div>
+        
+        <div class="col-md-2 col-sm-3 col-xs-6 col-color">
+            <div class="color c-flamingo" data-clipboard-text="#EF4836" data-rgb="rgb(239,72,54)" data-hex="#EF4836"></div>
+            <p class="color-title">Flamingo</p>
+            <p class="color-text color-hex">#EF4836</p>
+            <p class="color-text color-rgb">rgb(239,72,54)</p>
+        </div>
+        
+        <div class="col-md-2 col-sm-3 col-xs-6 col-color">
+            <div class="color c-valencia" data-clipboard-text="#D64541" data-rgb="rgb(214,69,65)" data-hex="#D64541"></div>
+            <p class="color-title">Valencia</p>
+            <p class="color-text color-hex">#D64541</p>
+            <p class="color-text color-rgb">rgb(214,69,65)</p>
+        </div>
+        
+        <div class="col-md-2 col-sm-3 col-xs-6 col-color">
+            <div class="color c-sunglo" data-clipboard-text="#E26A6A" data-rgb="rgb(226,106,106)" data-hex="#E26A6A"></div>
+            <p class="color-title">Sunglo</p>
+            <p class="color-text color-hex">#E26A6A</p>
+            <p class="color-text color-rgb">rgb(226,106,106)</p>
+        </div>
+        <div class="col-md-2 col-sm-3 col-xs-6 col-color">
+            <div class="color c-new-york-pink" data-clipboard-text="#E08283" data-rgb="rgb(224,130,131)" data-hex="#E08283"></div>
+            <p class="color-title">New York Pink</p>
+            <p class="color-text color-hex">#E08283</p>
+            <p class="color-text color-rgb">rgb(224,130,131)</p>
+        </div>
+        <div class="col-md-2 col-sm-3 col-xs-6 col-color">
+            <div class="color c-crusta" data-clipboard-text="#F2784B" data-rgb="rgb(242,120,75)" data-hex="#F2784B"></div>
+            <p class="color-title">Crusta</p>
+            <p class="color-text color-hex">#F2784B</p>
+            <p class="color-text color-rgb">rgb(242,120,75)</p>
+        </div>
+
+        <!-- Orange  -->
+        <div class="col-md-2 col-sm-3 col-xs-6 col-color">
+            <div class="color c-ecstasy" data-clipboard-text="#F9690E" data-rgb="rgb(249,105,14)" data-hex="#F9690E"></div>
+            <p class="color-title">Ecstasy</p>
+            <p class="color-text color-hex">#F9690E</p>
+            <p class="color-text color-rgb">rgb(249,105,14)</p>
+        </div>
+        <div class="col-md-2 col-sm-3 col-xs-6 col-color">
+            <div class="color c-tahiti-gold" data-clipboard-text="#E87E04" data-rgb="rgb(232,126,4)" data-hex="#E87E04"></div>
+            <p class="color-title">Tahiti Gold</p>
+            <p class="color-text color-hex">#E87E04</p>
+            <p class="color-text color-rgb">rgb(232,126,4)</p>
+        </div>
+        <div class="col-md-2 col-sm-3 col-xs-6 col-color">
+            <div class="color c-lightning-yellow" data-clipboard-text="#F5AB35" data-rgb="rgb(245,171,53)" data-hex="#F5AB35"></div>
+            <p class="color-title">Lightning Yellow</p>
+            <p class="color-text color-hex">#F5AB35</p>
+            <p class="color-text color-rgb">rgb(245,171,53)</p>
+        </div>
+        <div class="col-md-2 col-sm-3 col-xs-6 col-color">
+            <div class="color c-fire-bush" data-clipboard-text="#EB9532" data-rgb="rgb(235,149,50)" data-hex="#EB9532"></div>
+            <p class="color-title">Fire Bush</p>
+            <p class="color-text color-hex">#EB9532</p>
+            <p class="color-text color-rgb">rgb(235,149,50)</p>
+        </div>
+        <div class="col-md-2 col-sm-3 col-xs-6 col-color">
+            <div class="color c-jaffa" data-clipboard-text="#EB974E" data-rgb="rgb(235,151,78)" data-hex="#EB974E"></div>
+            <p class="color-title">Jaffa</p>
+            <p class="color-text color-hex">#EB974E</p>
+            <p class="color-text color-rgb">rgb(235,151,78)</p>
+        </div>
+        <div class="col-md-2 col-sm-3 col-xs-6 col-color">
+            <div class="color c-casablanca" data-clipboard-text="#F4B350" data-rgb="rgb(244,179,80)" data-hex="#F4B350"></div>
+            <p class="color-title">Casablanca</p>
+            <p class="color-text color-hex">#F4B350</p>
+            <p class="color-text color-rgb">rgb(244,179,80)</p>
+        </div>
+
+        <!-- Yellow  --> 
+        <div class="col-md-2 col-sm-3 col-xs-6 col-color">
+            <div class="color c-ripe-lemon" data-clipboard-text="#F7CA18" data-rgb="rgb(247,202,24)" data-hex="#F7CA18"></div>
+            <p class="color-title">Ripe Lemon</p>
+            <p class="color-text color-hex">#F7CA18</p>
+            <p class="color-text color-rgb">rgb(247,202,24)</p>
+        </div>
+        <div class="col-md-2 col-sm-3 col-xs-6 col-color">
+            <div class="color c-saffron" data-clipboard-text="#F9BF3B" data-rgb="rgb(249,191,59)" data-hex="#F9BF3B"></div>
+            <p class="color-title">Saffron</p>
+            <p class="color-text color-hex">#F9BF3B</p>
+            <p class="color-text color-rgb">rgb(249,191,59)</p>
+        </div>
+        <div class="col-md-2 col-sm-3 col-xs-6 col-color">
+            <div class="color c-saffron-light" data-clipboard-text="#F4D03F" data-rgb="rgb(244,208,63)" data-hex="#F4D03F"></div>
+            <p class="color-title">Saffron Light</p>
+            <p class="color-text color-hex">#F4D03F</p>
+            <p class="color-text color-rgb">rgb(244,208,63)</p>
+        </div>
+        
+        <!-- Green -->
+        <div class="col-md-2 col-sm-3 col-xs-6 col-color">
+            <div class="color c-salem" data-clipboard-text="#1E824C" data-rgb="rgb(30,130,76)" data-hex="#1E824C"></div>
+            <p class="color-title">Salem</p>
+            <p class="color-text color-hex">#1E824C</p>
+            <p class="color-text color-rgb">rgb(30,130,76)</p>
+        </div>
+        <div class="col-md-2 col-sm-3 col-xs-6 col-color">
+            <div class="color c-observatory" data-clipboard-text="#049372" data-rgb="rgb(4,147,114)" data-hex="#049372"></div>
+            <p class="color-title">Observatory</p>
+            <p class="color-text color-hex">#049372</p>
+            <p class="color-text color-rgb">rgb(4,147,114)</p>
+        </div>
+        
+        <div class="col-md-2 col-sm-3 col-xs-6 col-color">
+            <div class="color c-aquamarine" data-clipboard-text="#03A678" data-rgb="rgb(3,166,120)" data-hex="#03A678"></div>
+            <p class="color-title">Aquamarine</p>
+            <p class="color-text color-hex">#03A678</p>
+            <p class="color-text color-rgb">rgb(3,166,120)</p>
+        </div>
+        
+        <div class="col-md-2 col-sm-3 col-xs-6 col-color">
+            <div class="color c-eucalyptus" data-clipboard-text="#26A65B" data-rgb="rgb(38,166,91)" data-hex="#26A65B"></div>
+            <p class="color-title">Eucalyptus</p>
+            <p class="color-text color-hex">#26A65B</p>
+            <p class="color-text color-rgb">rgb(38,166,91)</p>
+        </div>
+        <div class="col-md-2 col-sm-3 col-xs-6 col-color">
+            <div class="color c-jungle-green" data-clipboard-text="#26C281" data-rgb="rgb(38,194,129)" data-hex="#26C281"></div>
+            <p class="color-title">Jungle Green</p>
+            <p class="color-text color-hex">#26C281</p>
+            <p class="color-text color-rgb">rgb(38,194,129)</p>
+        </div>
+        
+        <div class="col-md-2 col-sm-3 col-xs-6 col-color">
+            <div class="color c-ocean-green" data-clipboard-text="#4DAF7C" data-rgb="rgb(77,175,124)" data-hex="#4DAF7C"></div>
+            <p class="color-title">Ocean Green</p>
+            <p class="color-text color-hex">#4DAF7C</p>
+            <p class="color-text color-rgb">rgb(77,175,124)</p>
+        </div>
+        <div class="col-md-2 col-sm-3 col-xs-6 col-color">
+            <div class="color c-medium-aquamarine" data-clipboard-text="#66CC99" data-rgb="rgb(102,204,153)" data-hex="#66CC99"></div>
+            <p class="color-title">Medium Aquamarine</p>
+            <p class="color-text color-hex">#66CC99</p>
+            <p class="color-text color-rgb">rgb(102,204,153)</p>
+        </div>
+        <div class="col-md-2 col-sm-3 col-xs-6 col-color">
+            <div class="color c-madang" data-clipboard-text="#C8F7C5" data-rgb="rgb(200,247,197)" data-hex="#C8F7C5"></div>
+            <p class="color-title">Madang</p>
+            <p class="color-text color-hex">#C8F7C5</p>
+            <p class="color-text color-rgb">rgb(200,247,197)</p>
+        </div>
+
+        <!-- Blue  -->
+        <div class="col-md-2 col-sm-3 col-xs-6 col-color">
+            <div class="color c-riptide" data-clipboard-text="#86E2D5" data-rgb="rgb(134,226,213)" data-hex="#86E2D5"></div>
+            <p class="color-title">Riptide</p>
+            <p class="color-text color-hex">#86E2D5</p>
+            <p class="color-text color-rgb">rgb(134,226,213)</p>
+        </div>
+        
+        <div class="col-md-2 col-sm-3 col-xs-6 col-color">
+            <div class="color c-downy" data-clipboard-text="#65C6BB" data-rgb="rgb(101,198,187)" data-hex="#65C6BB"></div>
+            <p class="color-title">Downy</p>
+            <p class="color-text color-hex">#65C6BB</p>
+            <p class="color-text color-rgb">rgb(101,198,187)</p>
+        </div>  
+        <div class="col-md-2 col-sm-3 col-xs-6 col-color">
+            <div class="color c-light-sea" data-clipboard-text="#1BA39C" data-rgb="rgb(27,163,156)" data-hex="#1BA39C"></div>
+            <p class="color-title">Light Sea</p>
+            <p class="color-text color-hex">#1BA39C</p>
+            <p class="color-text color-rgb">rgb(27,163,156)</p>
+        </div>
+        <div class="col-md-2 col-sm-3 col-xs-6 col-color">
+            <div class="color c-ming" data-clipboard-text="#336E7B" data-rgb="rgb(51,110,123)" data-hex="#336E7B"></div>
+            <p class="color-title">Ming</p>
+            <p class="color-text color-hex">#336E7B</p>
+            <p class="color-text color-rgb">rgb(51,110,123)</p>
+        </div>
+        <div class="col-md-2 col-sm-3 col-xs-6 col-color">
+            <div class="color c-jordy-blue" data-clipboard-text="#89C4F4" data-rgb="rgb(137,196,244)" data-hex="#89C4F4"></div>
+            <p class="color-title">Jordy Blue</p>
+            <p class="color-text color-hex">#89C4F4</p>
+            <p class="color-text color-rgb">rgb(137,196,244)</p>
+        </div>
+        <div class="col-md-2 col-sm-3 col-xs-6 col-color">
+            <div class="color c-malibu" data-clipboard-text="#6BB9F0" data-rgb="rgb(107,185,240)" data-hex="#6BB9F0"></div>
+            <p class="color-title">Malibu</p>
+            <p class="color-text color-hex">#6BB9F0</p>
+            <p class="color-text color-rgb">rgb(107,185,240)</p>
+        </div>
+
+        <div class="col-md-2 col-sm-3 col-xs-6 col-color">
+            <div class="color c-shakespeare" data-clipboard-text="#52B3D9" data-rgb="rgb(82,179,217)" data-hex="#52B3D9"></div>
+            <p class="color-title">Shakespeare</p>
+            <p class="color-text color-hex">#52B3D9</p>
+            <p class="color-text color-rgb">rgb(82,179,217)</p>
+        </div>
+        
+        <div class="col-md-2 col-sm-3 col-xs-6 col-color">
+            <div class="color c-dodger-blue" data-clipboard-text="#19B5FE" data-rgb="rgb(25,181,254)" data-hex="#19B5FE"></div>
+            <p class="color-title">Dodger Blue</p>
+            <p class="color-text color-hex">#19B5FE</p>
+            <p class="color-text color-rgb">rgb(25,181,254)</p>
+        </div>
+        <div class="col-md-2 col-sm-3 col-xs-6 col-color">
+            <div class="color c-curious-blue" data-clipboard-text="#3498DB" data-rgb="rgb(52,152,219)" data-hex="#3498DB"></div>
+            <p class="color-title">Curious Blue</p>
+            <p class="color-text color-hex">#3498DB</p>
+            <p class="color-text color-rgb">rgb(52,152,219)</p>
+        </div>
+        <div class="col-md-2 col-sm-3 col-xs-6 col-color">
+            <div class="color c-poseidon" data-clipboard-text="#1E8BC3" data-rgb="rgb(30,139,195)" data-hex="#1E8BC3"></div>
+            <p class="color-title">Poseidon</p>
+            <p class="color-text color-hex">#1E8BC3</p>
+            <p class="color-text color-rgb">rgb(30,139,195)</p>
+        </div>
+        <div class="col-md-2 col-sm-3 col-xs-6 col-color">
+            <div class="color c-jelly-bean" data-clipboard-text="#2574A9" data-rgb="rgb(37,116,169)" data-hex="#2574A9"></div>
+            <p class="color-title">Jelly Bean</p>
+            <p class="color-text color-hex">#2574A9</p>
+            <p class="color-text color-rgb">rgb(37,116,169)</p>
+        </div>
+        <div class="col-md-2 col-sm-3 col-xs-6 col-color">
+            <div class="color c-steel-blue" data-clipboard-text="#4B77BE" data-rgb="rgb(75,119,190)" data-hex="#4B77BE"></div>
+            <p class="color-title">Steel Blue</p>
+            <p class="color-text color-hex">#4B77BE</p>
+            <p class="color-text color-rgb">rgb(75,119,190)</p>
+        </div>
+        <div class="col-md-2 col-sm-3 col-xs-6 col-color">
+            <div class="color c-hoki" data-clipboard-text="#67809F" data-rgb="rgb(103,128,159)" data-hex="#67809"></div>
+            <p class="color-title">Hoki</p>
+            <p class="color-text color-hex">#67809F</p>
+            <p class="color-text color-rgb">rgb(103,128,159)</p>
+        </div>
+        <div class="col-md-2 col-sm-3 col-xs-6 col-color">
+            <div class="color c-chambry" data-clipboard-text="#3A539B" data-rgb="rgb(58,83,155)" data-hex="#3A539B"></div>
+            <p class="color-title">Chambry</p>
+            <p class="color-text color-hex">#3A539B</p>
+            <p class="color-text color-rgb">rgb(58,83,155)</p>
+        </div>
+        <div class="col-md-2 col-sm-3 col-xs-6 col-color">
+            <div class="color c-jackson-purple" data-clipboard-text="#1F3A93" data-rgb="rgb(31,58,147)" data-hex="#1F3A93"></div>
+            <p class="color-title">Jackson Purple</p>
+            <p class="color-text color-hex">#1F3A93</p>
+            <p class="color-text color-rgb">rgb(31,58,147)</p>
+        </div> 
+        
+        <!-- Violet  -->
+        <div class="col-md-2 col-sm-3 col-xs-6 col-color">
+            <div class="color c-light-wisteria" data-clipboard-text="#BE90D4" data-rgb="rgb(190,144,212)" data-hex="#BE90D4"></div>
+            <p class="color-title">Light Wisteria</p>
+            <p class="color-text color-hex">#BE90D4</p>
+            <p class="color-text color-rgb">rgb(190,144,212)</p>
+        </div>
+        <div class="col-md-2 col-sm-3 col-xs-6 col-color">
+            <div class="color c-plum" data-clipboard-text="#913D88" data-rgb="rgb(145,61,136)" data-hex="#913D88"></div>
+            <p class="color-title">Plum</p>
+            <p class="color-text color-hex">#913D88</p>
+            <p class="color-text color-rgb">rgb(145,61,136)</p>
+        </div>
+        <div class="col-md-2 col-sm-3 col-xs-6 col-color">
+            <div class="color c-medium-purple" data-clipboard-text="#BF55EC" data-rgb="rgb(191,85,236)" data-hex="#BF55EC"></div>
+            <p class="color-title">Medium Purple</p>
+            <p class="color-text color-hex">#BF55EC</p>
+            <p class="color-text color-rgb">rgb(191,85,236)</p>
+        </div>
+        <div class="col-md-2 col-sm-3 col-xs-6 col-color">
+            <div class="color c-seance" data-clipboard-text="#9A12B3" data-rgb="rgb(154,18,179)" data-hex="#9A12B3"></div>
+            <p class="color-title">Seance</p>
+            <p class="color-text color-hex">#9A12B3</p>
+            <p class="color-text color-rgb">rgb(154,18,179)</p>
+        </div>
+
+        <!-- Dark Blue  -->
+        
+        <div class="col-md-2 col-sm-3 col-xs-6 col-color">
+            <div class="color c-pickled-bluewood" data-clipboard-text="#34495E" data-rgb="rgb(52,73,94)" data-hex="#34495E"></div>
+            <p class="color-title">Pickled Bluewood</p>
+            <p class="color-text color-hex">#34495E</p>
+            <p class="color-text color-rgb">rgb(52,73,94)</p>
+        </div>
+        <div class="col-md-2 col-sm-3 col-xs-6 col-color">
+            <div class="color c-madison" data-clipboard-text="#2C3E50" data-rgb="rgb(44,62,80)" data-hex="#2C3E50"></div>
+            <p class="color-title">Madison</p>
+            <p class="color-text color-hex">#2C3E50</p>
+            <p class="color-text color-rgb">rgb(44,62,80)</p>
+        </div>
+        <div class="col-md-2 col-sm-3 col-xs-6 col-color">
+            <div class="color c-ebony-clay" data-clipboard-text="#22313F" data-rgb="rgb(34,49,63)" data-hex="#22313F"></div>
+            <p class="color-title">Ebony Clay</p>
+            <p class="color-text color-hex">#22313F</p>
+            <p class="color-text color-rgb">rgb(34,49,63)</p>
+        </div>
+
+        <!-- Grey  -->
+        <div class="col-md-2 col-sm-3 col-xs-6 col-color">
+            <div class="color c-cascade" data-clipboard-text="#95A5A6" data-rgb="rgb(149,165,166)" data-hex="#95A5A6"></div>
+            <p class="color-title">Cascade</p>
+            <p class="color-text color-hex">#95A5A6</p>
+            <p class="color-text color-rgb">rgb(149,165,166)</p>
+        </div>
+        <div class="col-md-2 col-sm-3 col-xs-6 col-color">
+            <div class="color c-edward" data-clipboard-text="#ABB7B7" data-rgb="rgb(171,183,183)" data-hex="#ABB7B7"></div>
+            <p class="color-title">Edward</p>
+            <p class="color-text color-hex">#ABB7B7</p>
+            <p class="color-text color-rgb">rgb(171,183,183)</p>
+        </div>
+        <div class="col-md-2 col-sm-3 col-xs-6 col-color">
+            <div class="color c-silver-sand" data-clipboard-text="#BDC3C7" data-rgb="rgb(189,195,199)" data-hex="#BDC3C7"></div>
+            <p class="color-title">Silver Sand</p>
+            <p class="color-text color-hex">#BDC3C7</p>
+            <p class="color-text color-rgb">rgb(189,195,199)</p>
+        </div>
+        <div class="col-md-2 col-sm-3 col-xs-6 col-color">
+            <div class="color c-pumice" data-clipboard-text="#D2D7D3" data-rgb="rgb(210,215,211)" data-hex="#D2D7D3"></div>
+            <p class="color-title">Pumice</p>
+            <p class="color-text color-hex">#D2D7D3</p>
+            <p class="color-text color-rgb">rgb(210,215,211)</p>
+        </div>
+        <div class="col-md-2 col-sm-3 col-xs-6 col-color">
+            <div class="color c-iron" data-clipboard-text="#DADFE1" data-rgb="rgb(218,223,225)" data-hex="#DADFE1"></div>
+            <p class="color-title">Iron</p>
+            <p class="color-text color-hex">#DADFE1</p>
+            <p class="color-text color-rgb">rgb(218,223,225)</p>
+        </div>
+        <div class="col-md-2 col-sm-3 col-xs-6 col-color">
+            <div class="color c-gallery" data-clipboard-text="#EEEEEE" data-rgb="rgb(238,238,238)" data-hex="#EEEEEE"></div>
+            <p class="color-title">Gallery</p>
+            <p class="color-text color-hex">#EEEEEE</p>
+            <p class="color-text color-rgb">rgb(238,238,238)</p>
+        </div>
+        <div class="col-md-2 col-sm-3 col-xs-6 col-color">
+            <div class="color c-porcelain" data-clipboard-text="#ECF0F1" data-rgb="rgb(236,240,241)" data-hex="#ECF0F1"></div>
+            <p class="color-title">Porcelain</p>
+            <p class="color-text color-hex">#ECF0F1</p>
+            <p class="color-text color-rgb">rgb(236,240,241)</p>
+        </div>
+    </div>
+
+    <!-- SOCIAL MEDIA -->
+    <div class="container title-container">
+        <h2 class="color-palette">Social Media</h2>
+    </div>
+    <div class="container color-container">
+        <div class="col-md-2 col-sm-3 col-xs-6 col-color">
+            <div class="color c-twitter" data-clipboard-text="#00aced" data-rgb="rgb(0,172,237)" data-hex="#00aced"></div>
+            <p class="color-title">Twitter</p>
+            <p class="color-text color-hex">#00aced</p>
+            <p class="color-text color-rgb">rgb(0,172,237)</p>
+        </div>
+        <div class="col-md-2 col-sm-3 col-xs-6 col-color">
+            <div class="color c-facebook" data-clipboard-text="#3b5998" data-rgb="rgb(59,89,152)" data-hex="#3b5998"></div>
+            <p class="color-title">Facebook</p>
+            <p class="color-text color-hex">#3b5998</p>
+            <p class="color-text color-rgb">rgb(59,89,152)</p>
+        </div>
+        <div class="col-md-2 col-sm-3 col-xs-6 col-color">
+            <div class="color c-googleplus" data-clipboard-text="#dd4b39" data-rgb="rgb(221,75,57)" data-hex="#dd4b39"></div>
+            <p class="color-title">Google Plus</p>
+            <p class="color-text color-hex">#dd4b39</p>
+            <p class="color-text color-rgb">rgb(221,75,57)</p>
+        </div>
+        <div class="col-md-2 col-sm-3 col-xs-6 col-color">
+            <div class="color c-pinterest" data-clipboard-text="#cb2027" data-rgb="rgb(203,32,39)" data-hex="#cb2027"></div>
+            <p class="color-title">Pinterest</p>
+            <p class="color-text color-hex">#cb2027</p>
+            <p class="color-text color-rgb">rgb(203,32,39)</p>
+        </div>
+        <div class="col-md-2 col-sm-3 col-xs-6 col-color">
+            <div class="color c-linkedin" data-clipboard-text="#007bb6" data-rgb="rgb(0,123,182)" data-hex="#007bb6"></div>
+            <p class="color-title">Linkedin</p>
+            <p class="color-text color-hex">#007bb6</p>
+            <p class="color-text color-rgb">rgb(0,123,182)</p>
+        </div>
+        <div class="col-md-2 col-sm-3 col-xs-6 col-color">
+            <div class="color c-youtube" data-clipboard-text="#bb0000" data-rgb="rgb(187,0,0)" data-hex="#bb0000"></div>
+            <p class="color-title">YouTube</p>
+            <p class="color-text color-hex">#bb0000</p>
+            <p class="color-text color-rgb">rgb(187,0,0)</p>
+        </div>
+        <div class="col-md-2 col-sm-3 col-xs-6 col-color">
+            <div class="color c-vimeo" data-clipboard-text="#aad450" data-rgb="rgb(170,212,80)" data-hex="#aad450"></div>
+            <p class="color-title">Vimeo</p>
+            <p class="color-text color-hex">#aad450</p>
+            <p class="color-text color-rgb">rgb(170,212,80)</p>
+        </div>
+        <div class="col-md-2 col-sm-3 col-xs-6 col-color">
+            <div class="color c-tumblr" data-clipboard-text="#32506d" data-rgb="rgb(50,80,109)" data-hex="#32506d"></div>
+            <p class="color-title">Tumblr</p>
+            <p class="color-text color-hex">#32506d</p>
+            <p class="color-text color-rgb">rgb(50,80,109)</p>
+        </div>
+        <div class="col-md-2 col-sm-3 col-xs-6 col-color">
+            <div class="color c-instagram" data-clipboard-text="#517fa4" data-rgb="rgb(81,127,164)" data-hex="#517fa4"></div>
+            <p class="color-title">Instagram</p>
+            <p class="color-text color-hex">#517fa4</p>
+            <p class="color-text color-rgb">rgb(81,127,164)</p>
+        </div>
+        <div class="col-md-2 col-sm-3 col-xs-6 col-color">
+            <div class="color c-flickr" data-clipboard-text="#ff0084" data-rgb="rgb(255,0,132)" data-hex="#ff0084"></div>
+            <p class="color-title">Flickr</p>
+            <p class="color-text color-hex">#ff0084</p>
+            <p class="color-text color-rgb">rgb(255,0,132)</p>
+        </div>
+        <div class="col-md-2 col-sm-3 col-xs-6 col-color">
+            <div class="color c-dribbble" data-clipboard-text="#ea4c89" data-rgb="rgb(234,76,137)" data-hex="#ea4c89"></div>
+            <p class="color-title">Dribbble</p>
+            <p class="color-text color-hex">#ea4c89</p>
+            <p class="color-text color-rgb">rgb(234,76,137)</p>
+        </div>
+        <div class="col-md-2 col-sm-3 col-xs-6 col-color">
+            <div class="color c-quora" data-clipboard-text="#a82400" data-rgb="rgb(234,76,137)" data-hex="#a82400"></div>
+            <p class="color-title">Quora</p>
+            <p class="color-text color-hex">#a82400</p>
+            <p class="color-text color-rgb">rgb(168,36,0)</p>
+        </div>
+        <div class="col-md-2 col-sm-3 col-xs-6 col-color">
+            <div class="color c-foursquare" data-clipboard-text="#0072b1" data-rgb="rgb(0,114,177)" data-hex="#0072b1"></div>
+            <p class="color-title">Foursquare</p>
+            <p class="color-text color-hex">#0072b1</p>
+            <p class="color-text color-rgb">rgb(0,114,177)</p>
+        </div>
+        <div class="col-md-2 col-sm-3 col-xs-6 col-color">
+            <div class="color c-forrst" data-clipboard-text="#5B9A68" data-rgb="rgb(91,154,104)" data-hex="#5B9A68"></div>
+            <p class="color-title">Forrst</p>
+            <p class="color-text color-hex">#5B9A68</p>
+            <p class="color-text color-rgb">rgb(91,154,104)</p>
+        </div>
+        <div class="col-md-2 col-sm-3 col-xs-6 col-color">
+            <div class="color c-vk" data-clipboard-text="#45668e" data-rgb="rgb(69,102,142)" data-hex="#45668e"></div>
+            <p class="color-title">VK</p>
+            <p class="color-text color-hex">#45668e</p>
+            <p class="color-text color-rgb">rgb(69,102,142)</p>
+        </div>
+        <div class="col-md-2 col-sm-3 col-xs-6 col-color">
+            <div class="color c-wordpress" data-clipboard-text="#21759b" data-rgb="rgb(33,117,155)" data-hex="#21759b"></div>
+            <p class="color-title">Wordpress</p>
+            <p class="color-text color-hex">#21759b</p>
+            <p class="color-text color-rgb">rgb(33,117,155)</p>
+        </div>
+        <div class="col-md-2 col-sm-3 col-xs-6 col-color">
+            <div class="color c-stumbleupon" data-clipboard-text="#EB4823" data-rgb="rgb(235,72,35)" data-hex="#EB4823"></div>
+            <p class="color-title">Stumbleupon</p>
+            <p class="color-text color-hex">#EB4823</p>
+            <p class="color-text color-rgb">rgb(235,72,35)</p>
+        </div>
+        <div class="col-md-2 col-sm-3 col-xs-6 col-color">
+            <div class="color c-yahoo" data-clipboard-text="#7B0099" data-rgb="rgb(123,0,153)" data-hex="#7B0099"></div>
+            <p class="color-title">Yahoo</p>
+            <p class="color-text color-hex">#7B0099</p>
+            <p class="color-text color-rgb">rgb(123,0,153)</p>
+        </div>
+        <div class="col-md-2 col-sm-3 col-xs-6 col-color">
+            <div class="color c-blogger" data-clipboard-text="#fb8f3d" data-rgb="rgb(251,143,61)" data-hex="#fb8f3d"></div>
+            <p class="color-title">Blogger</p>
+            <p class="color-text color-hex">#fb8f3d</p>
+            <p class="color-text color-rgb">rgb(251,143,61)</p>
+        </div>
+        <div class="col-md-2 col-sm-3 col-xs-6 col-color">
+            <div class="color c-soundcloud" data-clipboard-text="#ff3a00"  data-rgb="rgb(255,58,0)" data-hex="#ff3a00"></div>
+            <p class="color-title">Soundcloud</p>
+            <p class="color-text color-hex">#ff3a00</p>
+            <p class="color-text color-rgb">rgb(255,58,0)</p>
+        </div>
+    </div>
+
+
+
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../src/assets/js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+    <script src="assets/js/clipboard.min.js"></script>
+
+    <!-- MAIN JS FILE -->
+    <script src="assets/js/main.js"></script>
+
+  </body>
+</html>
