@@ -6,6 +6,7 @@ Simple use of CSS Animations and jQuery to blast nice colors to the background a
  * palettes
  * social media
  
+ 
  Online: https://mtrybus2208.github.io/Color-blast/
 
  
